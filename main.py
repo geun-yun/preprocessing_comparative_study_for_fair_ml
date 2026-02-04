@@ -279,10 +279,4 @@ def run_all():
                 run(dataset, method, "Gender", k)
                 run(dataset, method, "Gender", k, normalise=True)
 
-# lfr parameter search
-# run_all()
-dataset="compas"
-K, Ax, Ay, Az = 5, 0.009, 0.8, 40.0
-# run(dataset, "diremover", "Gender", 10, normalise=True)
-run(dataset, "lfr", "Gender", 20, K=K, Ax=Ax, Ay=Ay, Az=Az)
-run(dataset, "lfr", "Gender", 20, normalise=True, K=K, Ax=Ax, Ay=Ay, Az=Az)
+run_all()
